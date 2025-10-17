@@ -1,6 +1,6 @@
 pkgname=qt6-qtnetworkauth
-pkgver=6.9.2
-pkgrel=1
+pkgver=6.10.0
+pkgrel=2
 pkgdesc="Network authentication module"
 arch=('x86_64')
 url="https://www.qt.io"
@@ -21,7 +21,7 @@ makedepends=(
     'ninja'
 )
 source=(git+https://code.qt.io/qt/${pkgname#*-}#tag=v${pkgver})
-sha256sums=(97baad991792073b11950ed0ad9b8e1366d45d131b0b1fefd8947fcc21b167b3)
+sha256sums=(cfc00473641a7202b91fee0eec45d1554244cfa2a31e434f68a7723f2c555bad)
 
 build() {
     cd ${pkgname#*-}
